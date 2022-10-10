@@ -1,0 +1,4 @@
+test:demo.o
+	gcc -m64 -no-pie demo.o -o test
+demo.o:demo.asm
+	nasm -f elf64 -g demo.asm
